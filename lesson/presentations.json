@@ -1,0 +1,16 @@
+{
+  "id": "modern-weapons",
+  "title": "Современные средства поражения",
+  "description": "Анализ оружия массового поражения: ядерного, химического и биологического. Рассмотрены исторические аспекты, современные угрозы и меры контроля. Автор: Новикова Варвара, группа 210ИС-23.",
+  "grade": "other",
+  "previewImage": "slides/modern-weapons/preview.jpg",
+  "file": "presentations/Современные средства поражения_Новикова 210ИС.pptx",
+  "slides": [
+    "slides/modern-weapons/slide1.jpg",
+    "slides/modern-weapons/slide2.jpg",
+    "slides/modern-weapons/slide3.jpg"
+  ],
+  "tags": ["БЖД", "безопасность", "ОМП"],
+  "author": "Новикова Варвара Андреевна",
+  "date": "2023-11-15"
+}
