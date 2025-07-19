@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Презентации по английскому языку</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/sait.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/sait.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/sait.png" />
+    <link rel="shortcut icon" href="images/sait.png" />
+    <meta name="theme-color" content="#4dabf7" />
+    <!-- Синий как в вашем дизайне -->
+    <meta name="msapplication-navbutton-color" content="#4dabf7" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#4dabf7" />
+
+    <!-- Подключение CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="presentations-page">
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="images/icon.png" alt="Logo" width="42" class="me-2" />
+          <span>Гожева Юлия</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Обо мне</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Презентации</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacts.html"
+                >Индивидуальное обучение</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <main class="container mt-5">
+      <section class="py-5">
+        <div class="text-center mb-5">
+          <h1 class="display-5 fw-bold mb-3">Презентации для уроков</h1>
+        </div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="bg-white p-4 rounded-3 shadow-sm mb-4">
+                <p class="lead text-center mb-0">
+                  Дорогие коллеги! Здесь вы найдете авторские презентации,
+                  которые превратят ваши уроки в яркие и запоминающиеся
+                  путешествия в мир английского языка.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Поиск -->
+        <div class="search-box">
+          <i class="ri-search-line search-icon"></i>
+          <input
+            type="text"
+            class="form-control ps-5 py-3"
+            placeholder="Поиск презентаций..."
+            id="searchInput"
+          />
+        </div>
+
+        <!-- Фильтры -->
+        <div class="d-flex flex-wrap justify-content-center mb-5">
+          <button
+            type="button"
+            class="btn btn-primary filter-btn active"
+            data-grade="all"
+          >
+            Все классы
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-secondary filter-btn"
+            data-grade="2"
+          >
+            2 класс
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-secondary filter-btn"
+            data-grade="3"
+          >
+            3 класс
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-secondary filter-btn"
+            data-grade="4"
+          >
+            4 класс
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-secondary filter-btn"
+            data-grade="5"
+          >
+            5 класс
+          </button>
+        </div>
+
+        <!-- Контейнер для презентаций -->
+        <div id="presentationsContainer">
+          <!-- 2 класс -->
+          <div class="grade-section mb-5" data-grade="2">
+            <h2 class="grade-title">2 класс</h2>
+            <div class="row g-4">
+              <!-- Презентация My Favorite -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card presentation-card h-100">
+                  <img
+                    src="images/img1.png"
+                    class="card-img-top presentation-img"
+                    alt="Презентация My Favorite"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">My Favorite (2 класс)</h5>
+                    <p class="card-text">
+                      Презентация для отработки темы «My favourite» с рассказом
+                      о двух мальчиках. Бонусом идет рабочий лист с устными
+                      заданиями.
+                    </p>
+                    <div class="d-flex gap-2">
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#presentationModal"
+                        data-presentation="my-favorite"
+                      >
+                        Подробнее
+                      </button>
+                      <a
+                        href="presentations/My-favorite.pptx"
+                        class="btn btn-info text-white"
+                        download="My_Favorite_2grade.pptx"
+                      >
+                        <i class="ri-download-line"></i> Скачать
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 класс -->
+          <div class="grade-section mb-5" data-grade="3">
+            <h2 class="grade-title">3 класс</h2>
+            <div class="row g-4">
+              <!-- Презентация Team Games -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card presentation-card h-100">
+                  <img
+                    src="images/img2.png"
+                    class="card-img-top presentation-img"
+                    alt="Презентация Team Games"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Team games (3 класс)</h5>
+                    <p class="card-text">
+                      Презентация для 3 класса в направлении «Team games». Игры
+                      для запоминания новой лексики.
+                    </p>
+                    <div class="d-flex gap-2">
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#presentationModal"
+                        data-presentation="team-games"
+                      >
+                        Подробнее
+                      </button>
+                      <a
+                        href="presentations/Team-games.pptx"
+                        class="btn btn-info text-white"
+                        download="Team_games_3grade.pptx"
+                      >
+                        <i class="ri-download-line"></i> Скачать
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Модальное окно для презентаций -->
+    <div
+      class="modal fade"
+      id="presentationModal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitle">Презентация</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-0">
+            <div
+              id="slideCarousel"
+              class="carousel slide"
+              data-bs-interval="false"
+              data-bs-touch="true"
+            >
+              <div class="carousel-inner" id="carouselInner">
+                <!-- Слайды будут добавляться через JS -->
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#slideCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Предыдущий</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#slideCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Следующий</span>
+              </button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              <i class="ri-close-line"></i> Закрыть
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Подключение JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
